@@ -17,16 +17,42 @@
             align-items: center;
             list-style-type: none;
             height: 90px;
-            background-color: tomato;
+            background-color: #fafafb;
         }
 
         nav ul li{
             padding: 0 12px;
         }
 
-        .brand img{
-            width: 20px;
-            padding: 0 8px;
+        .brand{
+            width: 120px;
+            
+        }
+
+        div > h2{
+            font-size: 3rem;
+            font-weight: 500;
+            /*line-height: 4rem;
+            letter-spacing: -0.01em;
+            margin: 0 0 1.5rem;*/
+        }
+        div > h5{
+            font-size: 1.25rem;
+            font-weight: 400;
+            /*line-height: 2rem;
+            letter-spacing: normal;
+            margin: 0;*/
+        }
+        #container{
+            margin: auto;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            height: 56px;
+            width: 144px;
+            border-radius: 35%;
+            padding: 0px 24px;
         }
     </style>
 </head>
@@ -35,11 +61,73 @@
     <ul>
         <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" class="brand" alt="logo">
         <li>Pricing</li>
-        <li>Features</li>
-        <li>Enterprice</li>
-        <li>Learn</li>
+        <li> 
+            <select id="Features">
+            <option value="">Features</option>
+            <option value="blogs">Turn Blogs to Vedios</option>
+            <option value="head">Talking head Vedios</option>
+            </select>
+        </li>
+        <li>
+            <select id="Enterprise">
+            <option value="">Enterprise</option>
+            <option value="enterpris">Lumen5 for Enterprice</option>
+            <option value="caseStudy">Case Study</option>
+            <option value="demo">Request a demo</option>
+            </select>
+        </li>
+        <li><select id="Learn">
+            <option value="">Learn</option>
+            <option value="blog">Blog</option>
+            <option value="podcast">Podcast</option>
+            <option value="Resources">Resources</option>
+            </select></li>
     </ul>
     </nav>
+
+    <div class="container">
+        <h2>Grow your brand and drive demand with video at scale</h2>
+        <h5>Our online video creator makes it easy for anyone
+            on your team to create engaging video content</h5>
+            <button>Sign up free</button>
+    </div>
+    <header>
+        <!-- Your header content here -->
+    </header>
+    <footer>
+        <div class="row">
+            <div class="footer-col">
+                <h4>EXPLORE</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>VEDIO TOOLS</h4>
+                <ul>
+                    <li><a href="#">Product</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>VEDIO CREATORS</h4>
+                <ul>
+                    <li><a href="#">Linkdin</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>LinkdIn</h4>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>LinkdIn</h4>
+                <ul>
+                    <li><a href="#">Product Updtes</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 <script>
 
