@@ -18,6 +18,15 @@
             list-style-type: none;
             height: 90px;
             background-color: #fafafb;
+            cursor: pointer;
+        }
+        .navButton{
+            background-color: blue;
+            color: white;
+            height: 45px;
+            width: 100px;
+            border-radius: 25px;
+            border: none;
         }
 
         nav ul li{
@@ -28,35 +37,126 @@
             width: 120px;
             
         }
+        .container{
+            justify-content: space-around;
+            padding-top: 70px;
+            padding-bottom: 50px;
+        }
 
         div > h2{
             font-size: 3rem;
             font-weight: 500;
-            /*line-height: 4rem;
+            text-align: center;
+            line-height: 4rem;
             letter-spacing: -0.01em;
-            margin: 0 0 1.5rem;*/
+            
         }
-        div > h5{
+        h5{
             font-size: 1.25rem;
             font-weight: 400;
-            /*line-height: 2rem;
+            text-align: center;
+            line-height: 2rem;
             letter-spacing: normal;
-            margin: 0;*/
+            padding-top: 40px;
         }
-        #container{
-            margin: auto;
+        
+        /*div  button{
+           
+            
+            justify-content: center;
+            align-items: center;
+            
+        }*/
+        .centered-button {
+            text-align: center;
         }
-        button{
+
+        .centered-button button {
+            margin: 0 auto;
             background-color: blue;
             color: white;
             height: 56px;
-            width: 144px;
-            border-radius: 35%;
-            padding: 0px 24px;
+            width: 150px;
+            border-radius: 25px;
+            border: none;
+        }
+        video{
+            display: flex;
+            width: 70%;
+            margin: auto;
+        }
+        .partners{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+        .feature1{
+            display: flex;
+            width: 90%;
+        }
+        .feature1 > .child{
+            width: 50%;
+        }
+        .child > h3{
+            display: block;
+            font-size: 40px;
+        }
+        .child > h5{
+            display: block;
+            text-align: left;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .child > button{
+            background-color: #fafafb;
+            color: blue;
+            height: 35px;
+            font-size: 15px;
+            margin-bottom: 30px;
+            border: none;
+        }
+        .child > div{
+            font-size: 17px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .child > div{
+            font-size: 17px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .child > div > .edit{
+            padding-top: 25px;
+        }
+        .parent{
+            background-color: #645bff;
+            height: 700px;
+        }
+        .feature2{
+            display: flex;
+            width: 90%;
+            margin: auto;
+            
+        }
+        .feature2 > .child{
+            width: 50%;
+            padding-top: 70px;
+        }
+        .parent3{
+            height: 700px;
+            padding-top: 100px;
+        }
+        .ved{
+            margin: auto;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <div class="divNav">
     <nav>
     <ul>
         <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" class="brand" alt="logo">
@@ -82,20 +182,133 @@
             <option value="podcast">Podcast</option>
             <option value="Resources">Resources</option>
             </select></li>
+            <button class="navButton">
+                Log in 
+            </button>
+            <button class="navButton">
+                Sign up
+            </button>
     </ul>
     </nav>
+    </div>
 
     <div class="container">
-        <h2>Grow your brand and drive demand with video at scale</h2>
-        <h5>Our online video creator makes it easy for anyone
+        <h2>Grow your brand and drive <br> demand with video at scale</h2>
+        <h5>Our online video creator makes it easy for anyone<br>
             on your team to create engaging video content</h5>
+    </div>
+    <div class="centered-button">
             <button>Sign up free</button>
     </div>
-    <header>
-        <!-- Your header content here -->
-    </header>
-    <footer>
+    <br>
+    <div class="vedio">
+        <video width="640" height="360" controls>
+            <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/public-home.webm"  type="vedio/mp4">
+        </video>
+    </div>
+    <h5>Over 10 million videos created across every industry</h5>
+    <div class="partners">
+        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-salesforce-color.png" alt="" >
+        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-pwc-color.png">
+        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-siemens-color1.png">
+        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-color.png">
+        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merk-color.png">
+        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-color.png">
+        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-mitsubishi-color.png">
+        <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-color.png">
+    </div>
+    
+    <div class="feature1">
+        <div class="child">
+            <video width="640" height="360" controls>
+                <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/public-home.webm"  type="vedio/mp4">
+            </video>
+            </video>
+        </div>
+        <div class="child">
+            <h3>Easier than building a slide<br> deck</h3>
+            <h5>Creating with Lumen5 is just like making<br>
+                 a presentation. Point and click, drag<br> and drop, done and done.</h5>
+            <button>
+                Get started for free-->
+            </button>
+            <hr>
+            <div>
+                <p>
+                    “One of our colleagues called Lumen5 the <br>
+                    PowerPoint of video making. Everybody can use <br>
+                    PowerPoint; it’s easy.”
+                </p>
+                <p class="edit"><b>Michelle Hsiao</b></p>
+                <p>Visual Content Director</p>
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-siemens-color1.png">
+            </div>
+        </div>
+    </div>
+    <div class="parent">
+    <div class="feature2">
+        <div class="child">
+            <h3>AI built to repurpose <br> marketing content</h3>
+            <h5>Automatically turn blog posts into <br>videos or transform zoom recordings 
+                <br> into captivating clips.</h5>
+            <button>
+                Get started for free-->
+            </button>
+            <hr>
+            <div>
+                <p>
+                    “It's the best content creator I've ever used. It 
+                    <br>takes me 10-15 minutes to create a video.”
+                </p>
+                <p class="edit"><b>Gareth Lloyd</b></p>
+                <p>Social Media Marketing Manager</p>
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-color.png">
+            </div>
+        </div>
+        <div class="child">
+            <video width="640" height="360" controls>
+                <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/ai-repurpose-3.webm"  type="vedio/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+<div class="parent3">
+    <div class="feature1">
+        <div class="child">
+            <video width="640" height="360" controls>
+                <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/choose-template.webm"  type="vedio/mp4">
+            </video>
+            
+        </div>
+        <div class="child">
+            <h3>Templates designed to help<br> you stay on brand, on<br> budget, and on time deck</h3>
+            <h5>Tap into hundreds of customizable <br>designs made to help you 
+                <br>communicate effectively and<br> consistently.<br></h5>
+            <button>
+                Get started for free-->
+            </button>
+            <hr>
+            <div>
+                <p>
+                    "Lumen5 provides a great library of images, video <br>
+                    footage, and music to deliver the energy and<br> 
+                    traction you need for your social posts."
+                </p>
+                <p class="edit"><b>Shirley Pang</b></p>
+                <p>Global Social Media Manager</p>
+                <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-color.png">
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="ved">
+        <video width="640" height="360" controls>
+            <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/public-templates.webm"  type="vedio/mp4">
+        </video>
+    </div>
+    <!-- <footer>
         <div class="row">
+            
             <div class="footer-col">
                 <h4>EXPLORE</h4>
                 <ul>
@@ -126,7 +339,7 @@
                     <li><a href="#">Product Updtes</a></li>
                 </ul>
             </div>
-        </div>
+        </div>-->
     </footer>
 </body>
 <script>
