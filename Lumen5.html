@@ -77,7 +77,7 @@
             color: white;
             height: 56px;
             width: 150px;
-            border-radius: 25px;
+            border-radius: 30px;
             border: none;
         }
         video{
@@ -152,6 +152,113 @@
         .ved{
             margin: auto;
             width: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .exp{
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 3rem;
+            letter-spacing: normal;
+            text-align: center;
+        }
+        .expFeature{
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .expFeature > button{
+            width: 150px;
+            height: 35px;
+            background: #645bff;
+            color: #fafafb;
+            border: none;
+            border-radius: 20px;
+            align-items: center;
+            
+        }
+
+        .par{
+            display: flex;
+            width:100%;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .par > .childs{
+            width:100%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .par2{
+            display: flex;
+            width:100%;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .par2 > .childs{
+            width:100%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .content{
+            
+            background-color: #645bff;
+            width: 90%;
+            margin: auto;
+            margin-top: 40px;
+            height: 350px;
+            border-radius: 30px;
+        }
+
+        .content > h3{
+            padding-top: 30px;
+            text-align: center;
+            color: #fafafb;
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 4rem;
+            letter-spacing: -0.01em;
+        }
+        .content > h5{
+            padding-top: 20px;
+            text-align: center;
+            color: #fafafb;
+        }
+
+        .center-button{
+            text-align: center;
+        }
+
+        .content > .center-button >button{
+            margin: 0 auto;
+            background-color:white;
+            color: blue;
+            height: 56px;
+            width: 150px;
+            border-radius: 30px;
+            border: none;
+            margin-top: 30px;
+        }
+        footer{
+            display: flex;
+            background: rgb(39, 38, 38);
+            height: 500x;
+        }
+
+        footer > .row > img{
+            width: 120px;
+            height: 44px;
+        }
+        footer > .row{
+            width: 25%;
+            color: aliceblue;
         }
     </style>
 </head>
@@ -302,44 +409,132 @@
     </div>
 </div>
     <div class="ved">
-        <video width="640" height="360" controls>
+        <video width="800" height="400" controls>
             <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/public-templates.webm"  type="vedio/mp4">
         </video>
     </div>
-    <!-- <footer>
+    <div class="ved">
+        <video width="640" height="360" controls>
+            <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/media-search.webm"  type="vedio/mp4">
+        </video>
+    </div>
+
+    <h3 class="exp">Explore videos made with Lumen5</h3>
+
+    <div class="expFeature">
+        <button>Contect Marketing</button>
+        <button>Communications</button>
+        <button>Promotional</button>
+        <button>People & Culture</button>
+        <button>Localization</button>
+    </div>
+    <div class="par">
+        
+        <div class="childs">
+            <video controls>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy.mp4"  type="vedio/mp4">
+            </video>
+        </div>
+        <div class="childs">
+            <video controls>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content.mp4"  type="vedio/mp4">
+            </video>
+        </div>
+        <div class="childs">
+            <video controls>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment.mp4"  type="vedio/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="par2">
+        
+        <div class="childs">
+            <video controls>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution.mp4"  type="vedio/mp4">
+            </video>
+        </div>
+        <div class="childs">
+            <video controls>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic.mp4"  type="vedio/mp4">
+            </video>
+        </div>
+        <div class="childs">
+            <video controls>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience.mp4"  type="vedio/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="content">
+        <h3>Join over 1,000,000 companies<br> using Lumen5 to tell their stories.</h3>
+        <h5>Lumen5 helps marketers, publishers, and brands create video <br>
+            content in a breeze, without any technical expertise.</h5>
+        <div class="center-button">
+            <button>Sign up free</button>
+        </div>
+    </div>
+    <div class="parent4">
+        <div class="feature2">
+            <div class="child">
+                <h3>Learning resources for video<br>marketing</h3>
+                <h5>Our mission is to help you become your<br>brand's best storyteller.</h5>
+                <button>
+                    Get started for free-->
+                </button>
+            </div>
+            <div class="child">
+                <video width="640" height="360" controls>
+                    <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/learning-resources.webm"  type="vedio/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <footer>
         <div class="row">
-            
-            <div class="footer-col">
-                <h4>EXPLORE</h4>
-                <ul>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>VEDIO TOOLS</h4>
-                <ul>
-                    <li><a href="#">Product</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>VEDIO CREATORS</h4>
-                <ul>
-                    <li><a href="#">Linkdin</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>LinkdIn</h4>
-                <ul>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>LinkdIn</h4>
-                <ul>
-                    <li><a href="#">Product Updtes</a></li>
-                </ul>
-            </div>
-        </div>-->
+            <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png">
+            <p>Lumen5 combines powerful AI with a simple drag-and-drop interface to help you create professional video content in minutes.</p>
+        </div>
+        <div class="row">
+            <span>
+                EXPLORE
+            </span>
+
+            <ul>
+                <li>About</li>
+                <li>Career</li>
+                <li>Linkedin</li>
+                <li>Support</li>
+                <li>Product Update</li>
+            </ul>
+        </div>
+        <div class="row">
+            <span>
+                VEDIO TOOLS
+            </span>
+
+            <ul>
+                <li>Add Text to Video</li>
+                <li>Cut Video</li>
+                <li>Merge Video</li>
+                <li>Compress Video</li>
+                <li>Resize Video</li>
+                <li>See All</li>
+            </ul>
+        </div>
+        <div class="row">
+            <span>
+                VEDIO CREATORS
+            </span>
+
+            <ul>
+                <li>Video Editor</li>
+                <li>Photo Video Maker</li>
+                <li>Facebook Video Maker</li>
+                <li>Youtube Intro Maker</li>
+                <li>Instagram Video Maker</li>
+                <li>See All</li>
+            </ul>
+        </div>
     </footer>
 </body>
 <script>
