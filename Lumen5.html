@@ -6,12 +6,30 @@
     <title>Document</title>
     <style>
         body{
-            background-color: antiquewhite;
+            background-color: #fafafb;
         }
         *{
             margin: 0;
             padding: 0;
         }
+        nav{
+            background: #fafafb;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .logo img {
+            height: 100%;
+            width: 160px; /* Adjust the maximum width of the logo */
+        }
+
+        .divNav{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+        
         nav ul{
             display: flex;
             align-items: center;
@@ -19,18 +37,37 @@
             height: 90px;
             background-color: #fafafb;
             cursor: pointer;
+            padding-left: 100px;
+            
         }
+
         .navButton{
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+        }
+        .navButton > button{
             background-color: blue;
             color: white;
             height: 45px;
             width: 100px;
             border-radius: 25px;
             border: none;
+            margin: auto;
+            align-items: center;
+            margin-left: 20px;
         }
-
+        select{
+        border: none; /* Remove the border */
+        outline: none; /* Remove the outline */
+        background: transparent;
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x); 
+        
+        }
         nav ul li{
             padding: 0 12px;
+            border: none;
         }
 
         .brand{
@@ -95,11 +132,18 @@
         }
         .feature1{
             display: flex;
+            justify-content: center;
+            align-items: center;
             width: 90%;
         }
         .feature1 > .child{
             width: 50%;
         }
+        .feature1 > .child > video{
+            width: 75%;
+            border-radius: 10px;
+        }
+
         .child > h3{
             display: block;
             font-size: 40px;
@@ -111,11 +155,12 @@
             padding-bottom: 30px;
         }
         .child > button{
-            background-color: #fafafb;
-            color: blue;
+            background-color: #645bff;
+            color: #fafafb;
             height: 35px;
             font-size: 15px;
             margin-bottom: 30px;
+            cursor: pointer;
             border: none;
         }
         .child > div{
@@ -145,15 +190,26 @@
             width: 50%;
             padding-top: 70px;
         }
+        .feature2 > .child > video{
+            height: 100%;
+            width: 75%;
+        } 
         .parent3{
             height: 700px;
             padding-top: 100px;
         }
-        .ved{
+        .ved1{
             margin: auto;
             width: 100%;
             padding-top: 30px;
             padding-bottom: 30px;
+            background-color: #ebf7f9;
+        }
+        .ved1 > video{
+            width: 90%;
+        }
+        .ved > video{
+            margin-top: 30px;
         }
         .exp{
             font-size: 2.25rem;
@@ -249,24 +305,57 @@
         footer{
             display: flex;
             background: rgb(39, 38, 38);
-            height: 500x;
+            height: 400px;
+            padding-left: 30px;
         }
 
-        footer > .row > img{
-            width: 120px;
-            height: 44px;
+        .row1 img {
+            max-width: 100px;
+            padding-left: 30px;
+            padding-top: 20px;
         }
-        footer > .row{
-            width: 25%;
+
+        .row1 p {
+            max-width: 300px;
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+        footer > .row1{
+            width: 31%;
             color: aliceblue;
         }
+        footer > .row{
+            padding-top: 20px;
+            width: 23%;
+            color: aliceblue;
+        }
+        ul li{
+            margin: 5px 0;
+        }
+        .vedio1{
+            width: 100%;
+        }
+        .vedio1 > video{
+            width: 80%;
+            border-radius: 20px;
+        }
+
+        @media all and (min-width:370px) and (max-width:520px) {
+            
+        }
+        
     </style>
 </head>
 <body>
-    <div class="divNav">
     <nav>
-    <ul>
+    <div class="divNav">
+
+        <div class="logo">
         <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" class="brand" alt="logo">
+        </div>
+
+        <div class="navlist">
+        <ul>
         <li>Pricing</li>
         <li> 
             <select id="Features">
@@ -288,16 +377,22 @@
             <option value="blog">Blog</option>
             <option value="podcast">Podcast</option>
             <option value="Resources">Resources</option>
-            </select></li>
-            <button class="navButton">
+            </select>
+        </li>
+        </ul>
+        </div>
+
+        <div class="navButton">
+            <button>
                 Log in 
             </button>
-            <button class="navButton">
+            <button>
                 Sign up
             </button>
-    </ul>
-    </nav>
+        </div>
     </div>
+    </nav>
+    
 
     <div class="container">
         <h2>Grow your brand and drive <br> demand with video at scale</h2>
@@ -308,10 +403,11 @@
             <button>Sign up free</button>
     </div>
     <br>
-    <div class="vedio">
-        <video width="640" height="360" controls>
-            <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/public-home.webm"  type="vedio/mp4">
+    <div class="vedio1">
+        <video autoplay loop muted>
+            <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/public-home.webm" type="video/webm">
         </video>
+        
     </div>
     <h5>Over 10 million videos created across every industry</h5>
     <div class="partners">
@@ -327,8 +423,8 @@
     
     <div class="feature1">
         <div class="child">
-            <video width="640" height="360" controls>
-                <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/public-home.webm"  type="vedio/mp4">
+            <video autoplay loop muted>
+                <source src="https://storage.googleapis.com/lumen5-site-images/slidedeck_v4.webm"  type="video/webm">
             </video>
             </video>
         </div>
@@ -373,8 +469,8 @@
             </div>
         </div>
         <div class="child">
-            <video width="640" height="360" controls>
-                <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/ai-repurpose-3.webm"  type="vedio/mp4">
+            <video autoplay loop muted>
+                <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/ai-repurpose-3.webm"  type="video/webm">
             </video>
         </div>
     </div>
@@ -382,8 +478,8 @@
 <div class="parent3">
     <div class="feature1">
         <div class="child">
-            <video width="640" height="360" controls>
-                <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/choose-template.webm"  type="vedio/mp4">
+            <video autoplay loop muted>
+                <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/choose-template.webm"  type="video/mp4">
             </video>
             
         </div>
@@ -408,14 +504,14 @@
         </div>
     </div>
 </div>
-    <div class="ved">
-        <video width="800" height="400" controls>
-            <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/public-templates.webm"  type="vedio/mp4">
+    <div class="ved1">
+        <video autoplay loop muted>
+            <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/public-templates.webm"  type="video/mp4">
         </video>
     </div>
     <div class="ved">
-        <video width="640" height="360" controls>
-            <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/media-search.webm"  type="vedio/mp4">
+        <video autoplay loop muted>
+            <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/media-search.webm"  type="video/mp4">
         </video>
     </div>
 
@@ -431,36 +527,36 @@
     <div class="par">
         
         <div class="childs">
-            <video controls>
-                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy.mp4"  type="vedio/mp4">
+            <video loop muted>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy.mp4"  type="video/mp4">
             </video>
         </div>
         <div class="childs">
-            <video controls>
-                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content.mp4"  type="vedio/mp4">
+            <video autoplay loop muted>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content.mp4"  type="video/mp4">
             </video>
         </div>
         <div class="childs">
-            <video controls>
-                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment.mp4"  type="vedio/mp4">
+            <video autoplay loop muted>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment.mp4"  type="video/mp4">
             </video>
         </div>
     </div>
     <div class="par2">
         
         <div class="childs">
-            <video controls>
-                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution.mp4"  type="vedio/mp4">
+            <video autoplay loop muted>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution.mp4"  type="video/mp4">
             </video>
         </div>
         <div class="childs">
-            <video controls>
-                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic.mp4"  type="vedio/mp4">
+            <video autoplay loop muted>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic.mp4"  type="video/mp4">
             </video>
         </div>
         <div class="childs">
-            <video controls>
-                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience.mp4"  type="vedio/mp4">
+            <video autoplay loop muted>
+                <source src="https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience.mp4"  type="video/mp4">
             </video>
         </div>
     </div>
@@ -483,14 +579,14 @@
                 </button>
             </div>
             <div class="child">
-                <video width="640" height="360" controls>
-                    <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/learning-resources.webm"  type="vedio/mp4">
+                <video autoplay loop muted>
+                    <source src="https://storage.googleapis.com/lumen5-site-images/website-assets/learning-resources.webm"  type="video/mp4">
                 </video>
             </div>
         </div>
     </div>
     <footer>
-        <div class="row">
+        <div class="row1">
             <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png">
             <p>Lumen5 combines powerful AI with a simple drag-and-drop interface to help you create professional video content in minutes.</p>
         </div>
